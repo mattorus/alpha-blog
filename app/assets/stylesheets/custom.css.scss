@@ -1,25 +1,41 @@
 $navbar-default-bg: #FCFCFC;
+$alpha-purple: #703C9D;
+$alpha-turqoise: #59BAD2;
 
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
 button {  
-  color: #703C9D;
+  color: $alpha-purple;
   text-decoration: none;
 }
 
 #logo {
   float: left;
   font-size: 1.7em;
-  color: #59BAD2;
+  color: $alpha-turqoise;
   letter-spacing: -1px;
-  font-weight: bold;
+  &:hover {    
+    color: $alpha-purple;
+    text-decoration: none;
+    font-weight: bold;
+  }
 }
 
-#logo:hover {  
-  color: #703C9D;
-  text-decoration: none;
+.navbar-default {
+  .navbar-nav {
+    > li {
+      > a {
+        letter-spacing: -1px;
+        &:hover {
+          color: $alpha-purple;
+          font-weight: bold;
+          letter-spacing: -1px;
+        }
+      }
+    }
+  }      
 }
 
 .center {
@@ -32,28 +48,32 @@ button {
 }
 
 .jumbotron h1 {
-  color: #59BAD2;
+  color: $alpha-turqoise;
 }
 
 .butn-xlarge {
-  background-color: #59BAD2;
-}
-
-.butn-xlarge:hover {  
-  background-color: #703C9D;
-  color: #59BAD2;
+  background-color: $alpha-turqoise;
+  &:hover {
+    background-color: $alpha-purple;
+    color: $alpha-turqoise;
+  }
 }
 
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid;
-  color: #703C9D;
+  border-top: 1px solid #eaeaea;
+  color: $alpha-purple;
 }
 
-footer a:hover {  
-  color: #703C9D;
-  text-decoration: none;
+footer a {  
+  color: $alpha-turqoise;  
+  letter-spacing: -1px;
+  &:hover {    
+    color: $alpha-purple;
+    text-decoration: none;
+    font-weight: bold; 
+  }
 }
 
 #footer_logo {
