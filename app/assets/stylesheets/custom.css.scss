@@ -4,6 +4,11 @@ $navbar-default-bg: #FCFCFC;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+button {  
+  color: #703C9D;
+  text-decoration: none;
+}
+
 #logo {
   float: left;
   font-size: 1.7em;
@@ -21,6 +26,11 @@ $navbar-default-bg: #FCFCFC;
   text-align: left;
 }
 
+.jumbotron {
+  background-image: asset-url('home_page_card.png');
+  background-size: cover;
+}
+
 .jumbotron h1 {
   color: #59BAD2;
 }
@@ -31,17 +41,25 @@ $navbar-default-bg: #FCFCFC;
 
 .butn-xlarge:hover {  
   background-color: #703C9D;
+  color: #59BAD2;
 }
 
 footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid;
-  color: #777;
+  color: #703C9D;
 }
 
-footer a:hover {
-  color: #222;
+footer a:hover {  
+  color: #703C9D;
+  text-decoration: none;
+}
+
+#footer_logo {
+  float: left;
+  list-style: none;
+  margin-left: 0px;
 }
 
 footer ul {
