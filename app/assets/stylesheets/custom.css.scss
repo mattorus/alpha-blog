@@ -52,8 +52,9 @@ button {
   color: $alpha-turqoise;
 }
 
-.butn-xlarge {
+.butn-xlarge, .btn-xs {
   background-color: $alpha-turqoise;
+  color: $border-white;
   &:hover {
     background-color: $alpha-purple;
     color: $alpha-turqoise;
@@ -62,12 +63,9 @@ button {
 
 .alpha-header {
   color: $alpha-purple;
+  padding-bottom: 15px;
 }
 
-.article-actions {
-  border-top: 1px solid $border-white;
-  padding-top: 5px;
-}
 
 .article-title {  
   color: $alpha-turqoise;
