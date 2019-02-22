@@ -7,10 +7,19 @@
 <div class="col-xs-8">
   <div class="col-xs-offset-1 article-title">
     <h1><%= @user.username %>.</h1>
-  </div><hr><br>
+  </div>
+  <hr>
   <div class="col-xs-offset-2 article-description">
     <h3><%= plural_humanize(@user.articles.count, "article") if @user.articles %></h3>
   </div>
+  <br>
+</div>
+<div class="center">
+  <%= will_paginate @user_articles %>
 </div>
 
-<%= render 'articles/article', obj: @user.articles %>
+<%= render 'articles/article', obj: @user_articles %>
+
+<div class="center">
+  <%= will_paginate @user_articles %>
+</div>
