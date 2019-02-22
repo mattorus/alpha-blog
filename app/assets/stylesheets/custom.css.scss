@@ -2,6 +2,7 @@ $navbar-default-bg: #FCFCFC;
 $alpha-purple: #703C9D;
 $alpha-turqoise: #59BAD2;
 $border-white: #eaeaea;
+$default-gray: #777;
 
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
@@ -66,6 +67,11 @@ button {
   padding-bottom: 15px;
 }
 
+.article-meta-details {
+  border-top: 1px solid $border-white;
+  margin-top: 15px;
+  color: $default-gray;
+}
 
 .article-title {  
   color: $alpha-turqoise;
