@@ -6,4 +6,9 @@ module ApplicationHelper
     gravatar_url ="https://secure.gravatar.com/avatar/#{gravatar_id}?s=#{size}"
     image_tag(gravatar_url, alt: user.username, class: "img-circle")
   end
+
+  def plural_humanize(num, to_pluralize)
+    num.to_words.humanize  + " " + to_pluralize.pluralize(num) + "."
+  end
+
 end
