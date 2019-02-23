@@ -55,14 +55,10 @@ class ArticlesController < ApplicationController
     end
 
     def require_same_user
-      if current_user != @article.user
+      if (current_user != @article.user and !current_user.admin?)
         flash[:danger] = "That is not yours."
         redirect_to root_path
       end
-    end
-
-    def articles_show
-    
     end
 
 end
