@@ -50,10 +50,7 @@ class UsersController < ApplicationController
   end
 
   def require_same_user
-    if (current_user != @user and !current_user.admin?)
-      flash[:danger] = "Not allowed."
-      redirect_to root_path
-    elsif (current_user != @user and @user.admin?)
+    if (current_user != @user and (!current_user.admin? || @user.admin?))
       flash[:danger] = "Not allowed."
       redirect_to root_path
     end
