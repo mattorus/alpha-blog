@@ -25,20 +25,50 @@ button {
   }
 }
 
+// Copied from inspecting browser
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {  
+  color: $alpha-purple;
+  font-weight: bold;
+  letter-spacing: -1px;
+  text-decoration: none;
+  background-color: transparent;
+}
+
 .navbar-default {
-  .navbar-nav {
-    > li {
-      > a {
+  .navbar-nav { 
+    li {
+      a {
         letter-spacing: -1px;
         &:hover {
           color: $alpha-purple;
           font-weight: bold;
           letter-spacing: -1px;
+          text-decoration: none;     
         }
       }
     }
-  }      
+    .dropdown-menu, .dropdown-toggle {
+      letter-spacing: -1px;        
+      &:hover {
+        color: $alpha-purple;
+        font-weight: bold;
+        letter-spacing: -1px;
+        text-decoration: none;
+      }
+      li, a {
+        &:hover {
+          color: $alpha-purple;
+          font-weight: bold;
+          letter-spacing: -1px;
+          text-decoration: none;
+          background-color: transparent;
+        }
+      }
+    }
+  }
 }
+
+
 
 .center {
   text-align: left;
