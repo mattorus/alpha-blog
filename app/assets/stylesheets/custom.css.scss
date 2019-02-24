@@ -98,8 +98,7 @@ button {
 }
 
 .article-meta-details {
-  border-top: 1px solid $border-white;
-  margin-top: 15px;
+  margin-top: -15px;
   color: $default-gray;
 }
 
@@ -134,6 +133,28 @@ button {
 .listing {
   list-style: none;
   padding-left: 0; 
+}
+
+.badge {
+  background-color: $alpha-turqoise;  
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+  &:hover {    
+    background-color: $alpha-purple;
+    color: $alpha-turqoise;
+  }
+  a {    
+    color: $border-white;
+    &:hover {
+      color: $alpha-turqoise;
+      text-decoration: none;
+    }
+  }
+}
+
+.input_checkbox input {
+  width: auto !important;
 }
 
 footer {
